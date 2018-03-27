@@ -1,0 +1,230 @@
+
+
+
+
+body {
+    /*  background-color: lemonchiffon; */
+
+
+}
+
+h1,
+h2 {
+    font-family: 'Alex Brush', cursive;
+}
+
+a {
+    color: black;
+}
+
+
+
+.link {
+    background: white;
+	padding: 15px;
+	margin: 5px;	
+    border-radius: 3px;
+    
+}
+
+.image {
+    background-image: url(../images/cake.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+
+
+.heading {
+    text-align: center;
+ /*   margin: 2em;   */
+/*    padding: 2em;*/
+}
+
+.top-nav {
+    text-align: center;
+}
+
+.top-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entry {
+    background-color: white;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    padding: 1em;
+}
+
+/* Entries */
+
+.entry-1 {
+    background-color: white;
+    padding: 2em;
+}
+
+.ingredients {
+/*    margin-right: 2em;
+    margin-left: 2em;
+    padding: 1em;*/
+    padding: 2em;
+    background: white;
+}
+
+.project {
+    text-align: center;
+    background: white;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.commentBox {
+    background: white;
+    margin: 2em;
+    padding: 2em;
+}
+
+.comment {
+    width: 75%;
+    margin-bottom: 1em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 500px) {.
+
+    .top-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+    .sticky + .content {
+        padding-top: 1em;
+    }
+    
+    .top-nav-links {
+        padding: 15px;
+	    border-radius: 10px; 
+        
+/*        flex*/
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+        
+    }    
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .project {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .entry-1 {
+        width: 60%;
+        padding: 0em;
+        padding-left: 2em;
+    }
+    
+    .ingredients {
+        order: 1;
+        padding: 0em;
+        padding-right: 2em;
+        padding-left: 1em;
+/*
+        margin-left: 0;
+*/
+/*        padding-left: 2em;*/
+/*        margin: -2em;*/
+    }
+    
+}
+
+@media (min-width: 769px) {
+    
+/*    Makes ingredients bar sticky*/
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+    .sticky + .content {
+        padding-top: 1em;
+    }
+   
+    
+/*    Makes navigation bar spread out*/
+    
+    .top-nav-links {
+        padding: 15px;
+	    border-radius: 10px;         
+        display: flex;
+        flex-wrap: wrap;        
+    }    
+    
+    
+    .home {
+        margin-right: auto;
+    }
+    
+
+    /* entries */
+    
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .entry-1 {
+        width: 60%;
+        padding-left: 2em;
+    }
+    
+    .ingredients {
+        order: 1;
+        width: 20%
+        padding-right: 2em;
+        padding-left: 1em;
+/*
+        margin-left: 0;
+*/
+/*        padding-left: 2em;*/
+/*        margin: -2em;*/
+    }
+    
+    /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
