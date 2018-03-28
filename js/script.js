@@ -40,6 +40,7 @@ function highlightIngredient () {
         ingredientsLinkColl[i].addEventListener('click', () => {
             ingredientsColl[i].style.backgroundColor = 'yellow';
         });
+        
     } 
 }
 
@@ -56,21 +57,6 @@ if ( $(window).width() < 500) {
 }
 
 
-// Applies correct function on window re-size
-/*
-window.onresize = function() {resizeIngredients()};
-    
-function resizeIngredients() {
-    if ( $(window).width() < 500) {
-                
-        window.changeIngredient();    
-
-    } else { 
-    
-        window.highlightIngredient();
-
-    };
-}*/
 
 // Button resets both the ingredients list and the ingredients link
 
@@ -104,3 +90,24 @@ function myFunction() {
   }
 }
 
+// Alert messages when non-functioning links clicked
+
+about.addEventListener("click", function () {
+   window.alert("There is no 'About' page!"); 
+});
+
+recipes.addEventListener("click", function () {
+   window.alert("There is no 'Recipes' page!"); 
+});
+
+blog.addEventListener("click", function () {
+   window.alert("There is no 'Blog' page!"); 
+});
+
+links.addEventListener("click", function () {
+   window.alert("There is no 'Links' page!"); 
+});
+
+submitButton.addEventListener("click", function () {
+   window.alert("No comments accepted at this time!"); 
+});
