@@ -1,13 +1,6 @@
 
 
 
-
-body {
-    /*  background-color: lemonchiffon; */
-
-
-}
-
 h1,
 h2 {
     font-family: 'Alex Brush', cursive;
@@ -38,8 +31,7 @@ a {
 
 .heading {
     text-align: center;
- /*   margin: 2em;   */
-/*    padding: 2em;*/
+
 }
 
 .top-nav {
@@ -67,10 +59,8 @@ a {
 }
 
 .ingredients {
-/*    margin-right: 2em;
-    margin-left: 2em;
-    padding: 1em;*/
-    padding: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
     background: white;
 }
 
@@ -88,7 +78,7 @@ a {
 }
 
 .comment {
-    width: 75%;
+    width: 55%;
     margin-bottom: 1em;
 }
 
@@ -104,6 +94,8 @@ a {
         justify-content: space-around;
     }
 
+/*    Makes ingredients bar sticky*/    
+    
     .sticky {
         position: fixed;
         top: 0;
@@ -111,7 +103,7 @@ a {
     }
     
     .sticky + .content {
-        padding-top: 1em;
+        padding-top: 2em;
     }
     
     .top-nav-links {
@@ -127,52 +119,34 @@ a {
 
         
     }    
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    
+ 
     .project {
         display: inline-block;
         width: 100%;
         text-align: center;
     }
     
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
     .entry-1 {
-        width: 60%;
-        padding: 0em;
-        padding-left: 2em;
+        width: 55%;
     }
     
     .ingredients {
         order: 1;
-        padding: 0em;
+        flex: 1;
         padding-right: 2em;
         padding-left: 1em;
-/*
-        margin-left: 0;
-*/
-/*        padding-left: 2em;*/
-/*        margin: -2em;*/
     }
     
 }
 
 @media (min-width: 769px) {
     
-/*    Makes ingredients bar sticky*/
-    
-    .sticky {
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-    
-    .sticky + .content {
-        padding-top: 1em;
-    }
-   
     
 /*    Makes navigation bar spread out*/
     
@@ -190,41 +164,13 @@ a {
     
 
     /* entries */
+  
     
-    .wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
 
-    .project {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
-    
     .entry-1 {
         width: 60%;
-        padding-left: 2em;
     }
     
-    .ingredients {
-        order: 1;
-        width: 20%
-        padding-right: 2em;
-        padding-left: 1em;
-/*
-        margin-left: 0;
-*/
-/*        padding-left: 2em;*/
-/*        margin: -2em;*/
-    }
-    
-    /* ---- Float clearfix ---- */
 
-	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
 }
+
