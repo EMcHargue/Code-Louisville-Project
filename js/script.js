@@ -93,21 +93,26 @@ function myFunction() {
 // Alert messages when non-functioning links clicked
 
 about.addEventListener("click", function () {
-   window.alert("There is no 'About' page!"); 
+    window.alert("There is no 'About' page!");
+    event.preventDefault();
 });
 
 recipes.addEventListener("click", function () {
-   window.alert("There is no 'Recipes' page!"); 
+    window.alert("There is no 'Recipes' page!"); 
+    event.preventDefault();
 });
 
 blog.addEventListener("click", function () {
-   window.alert("There is no 'Blog' page!"); 
+    window.alert("There is no 'Blog' page!"); 
+    event.preventDefault();
 });
 
 links.addEventListener("click", function () {
-   window.alert("There is no 'Links' page!"); 
+    window.alert("There is no 'Links' page!"); 
+    event.preventDefault();
 });
 
 submitButton.addEventListener("click", function () {
-   window.alert("No comments accepted at this time!"); 
+    window.alert("No comments accepted at this time!"); 
+    event.preventDefault();
 });
