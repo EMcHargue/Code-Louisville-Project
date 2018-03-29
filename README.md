@@ -14,7 +14,7 @@ Some of my CSS classes are:
 ## Custom JavaScript Functions
 ```
 My javaScript functions:
-    1.  changeIngredient - this function changes the ingredients link inside the project text (where an ingredient would be mentioned inside a recipe), when clicked, to the text of the corresponding ingredient in the ingredients bar (so that the user does not have to scroll up to the ingredients bar to find it).  It also changes the background of the ingredients link to yellow.  This function is called in an if/else statement and works when the browser is smaller than 500 pixels when loaded.  
+    1.  changeIngredient - This function is called in an if/else statement and works when the browser is loaded with a screen size smaller than 500 pixels.  It changes the ingredients link inside the project text (where an ingredient would be mentioned inside a recipe), when clicked, to the text of the corresponding ingredient in the ingredients bar (so that the user does not have to scroll up to the ingredients bar to find it).  It also changes the background of the ingredients link to yellow. 
     
-    2. highlightIngredient - this function changes the background color of the ingredient in the ingredients bar to yellow when the corresponding ingredient link is clicked.  This function is called in the if/else statement and works when the browser is 500 pixels and larger when loaded.
+    2. highlightIngredient - This function is called in the if/else statement and works when the browser is loaded with a screen width of 500 pixels and larger.  This function changes the background color of the ingredient in the ingredients bar to yellow when the corresponding ingredient link is clicked.  
 ```
