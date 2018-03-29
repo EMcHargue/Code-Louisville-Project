@@ -92,27 +92,27 @@ function myFunction() {
 
 // Alert messages when non-functioning links clicked
 
-about.addEventListener("click", function () {
+about.addEventListener("click", function (event) {
     window.alert("There is no 'About' page!");
     event.preventDefault();
 });
 
-recipes.addEventListener("click", function () {
+recipes.addEventListener("click", function (event) {
     window.alert("There is no 'Recipes' page!"); 
     event.preventDefault();
 });
 
-blog.addEventListener("click", function () {
+blog.addEventListener("click", function (event) {
     window.alert("There is no 'Blog' page!"); 
     event.preventDefault();
 });
 
-links.addEventListener("click", function () {
+links.addEventListener("click", function (event) {
     window.alert("There is no 'Links' page!"); 
     event.preventDefault();
 });
 
-submitButton.addEventListener("click", function () {
+submitButton.addEventListener("click", function (event) {
     window.alert("No comments accepted at this time!"); 
     event.preventDefault();
 });
