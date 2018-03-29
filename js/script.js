@@ -1,4 +1,24 @@
+// Alert messages when non-functioning links clicked
 
+about.addEventListener("click", function (event) {
+    window.alert("There is no 'About' page!");
+    event.preventDefault();
+});
+
+recipes.addEventListener("click", function (event) {
+    window.alert("There is no 'Recipes' page!"); 
+    event.preventDefault();
+});
+
+blog.addEventListener("click", function (event) {
+    window.alert("There is no 'Blog' page!"); 
+    event.preventDefault();
+});
+
+links.addEventListener("click", function (event) {
+    window.alert("There is no 'Links' page!"); 
+    event.preventDefault();
+});
 
 
 const ingredientsColl = document.getElementById('ingredients').children;    /* collection of ingredients */
@@ -90,27 +110,7 @@ function myFunction() {
   }
 }
 
-// Alert messages when non-functioning links clicked
 
-about.addEventListener("click", function (event) {
-    window.alert("There is no 'About' page!");
-    event.preventDefault();
-});
-
-recipes.addEventListener("click", function (event) {
-    window.alert("There is no 'Recipes' page!"); 
-    event.preventDefault();
-});
-
-blog.addEventListener("click", function (event) {
-    window.alert("There is no 'Blog' page!"); 
-    event.preventDefault();
-});
-
-links.addEventListener("click", function (event) {
-    window.alert("There is no 'Links' page!"); 
-    event.preventDefault();
-});
 
 submitButton.addEventListener("click", function (event) {
     window.alert("No comments accepted at this time!"); 
