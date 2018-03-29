@@ -89,7 +89,7 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 500px) {.
+@media (min-width: 500px) {
 
     .top-nav-links {
         display: flex;
